@@ -1,0 +1,38 @@
+.Root {
+  margin: 0;
+  padding: 0 15px 0;
+  text-decoration: none;
+
+  ul {
+    padding: 0;
+  }
+
+ li {
+    list-style-type: none;
+    text-indent: -15px;
+    padding: 0 0 0 15px;
+  }
+
+  div {
+    cursor: pointer;
+
+    h3 {
+      pointer-events: none;
+    }
+
+    p {
+      cursor: default;
+    }
+  }
+}
+
+.active p,
+.active ul {
+  display: block;
+}
+
+.unActive p,
+.unActive ul {
+  display: none;
+}
+
