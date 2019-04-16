@@ -7,15 +7,14 @@ export default class Root extends React.Component {
   render() {
     return (
       <div className="Root">
-        <h2>
-          Czym są perfumy
-        </h2>
-        <p>
-          Nazwa <i>perfumy</i> wywodzi się od łacińskich słów <i>per fumum</i>, co oznacza "przez dym" i odnosi się do starożytnych obrzędów religijnych, w czasie których palono aromatyczne żywice i drewno w celu złożenia hołdu bogom i pozyskania ich przychylności. W późniejszym okresie Francuzi nazwali perfumami przyjemny zapach, który płynął z palących się kadzideł.
-        </p>
-        <p>
-          Perfumy w znaczeniu współczesnym to alkoholowo - wodne roztwory mieszanki naturalnych i syntetycznych różnych substancji zapachowych, w czasach starożytnych nie istniały. Czysty alkohol zaczęli dopiero w średniowieczu produkować Arabowie. Cywilizacje starożytne ceniły i stosowały wonności oraz pachnidła w postaci pomad uzyskanych z mieszaniny tłuszczów i wonnych roślin. Posiadanie i używanie pachnideł było oznaką bogactwa i luksusu, a ich posiadacze cieszyli się ogromnym szacunkiem.
-        </p>
+        <CollapsibleContent title={<h2>Czym są perfumy</h2>}>
+          <p>
+            Nazwa <i>perfumy</i> wywodzi się od łacińskich słów <i>per fumum</i>, co oznacza "przez dym" i odnosi się do starożytnych obrzędów religijnych, w czasie których palono aromatyczne żywice i drewno w celu złożenia hołdu bogom i pozyskania ich przychylności. W późniejszym okresie Francuzi nazwali perfumami przyjemny zapach, który płynął z palących się kadzideł.
+          </p>
+          <p>
+            Perfumy w znaczeniu współczesnym to alkoholowo - wodne roztwory mieszanki naturalnych i syntetycznych różnych substancji zapachowych, w czasach starożytnych nie istniały. Czysty alkohol zaczęli dopiero w średniowieczu produkować Arabowie. Cywilizacje starożytne ceniły i stosowały wonności oraz pachnidła w postaci pomad uzyskanych z mieszaniny tłuszczów i wonnych roślin. Posiadanie i używanie pachnideł było oznaką bogactwa i luksusu, a ich posiadacze cieszyli się ogromnym szacunkiem.
+          </p>
+        </CollapsibleContent>
 
         <CollapsibleContent title="Historia perfum alkoholowych">
           <p>

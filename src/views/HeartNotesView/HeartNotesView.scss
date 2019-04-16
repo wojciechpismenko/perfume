@@ -1,0 +1,28 @@
+.HeartNotesView {
+   margin: 0;
+  padding: 0 15px 0;
+  text-decoration: none;
+  cursor: default;
+
+  ul {
+    padding: 0;
+  }
+
+ li {
+    list-style-type: none;
+    text-indent: -15px;
+    padding: 5px 0 5px 15px;
+  }
+
+  h2, h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
+
+  p {
+    cursor: default;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+}
