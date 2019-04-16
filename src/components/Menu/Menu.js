@@ -14,19 +14,19 @@ export default class Menu extends React.Component {
     return (
       <>
         <BrowserRouter>
-          <nav>
+          <nav className="Menu">
             <ul>
               <li>
-                <NavLink exact to="/">perfume</NavLink>
+                <NavLink exact to="/">perfumy</NavLink>
               </li>
               <li>
-                <NavLink to="/headnotes">head notes</NavLink>
+                <NavLink to="/headnotes">nuty głowy</NavLink>
               </li>
               <li>
-                <NavLink to="/heartnotes">heart notes</NavLink>
+                <NavLink to="/heartnotes">nuty serca</NavLink>
               </li>
               <li>
-                <NavLink to="/basenotes">base notes</NavLink>
+                <NavLink to="/basenotes">nuty bazy</NavLink>
               </li>
             </ul>
           </nav>

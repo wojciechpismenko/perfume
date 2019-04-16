@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.Menu {
+  margin: 0;
+  padding: 0 15px 0;
+  cursor: pointer;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+  }
+
+  li {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 0 15px 0 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+
+    a {
+      margin: 0 15px 0 0;
+      text-decoration: none;
+    }
+  }
+}
