@@ -1,16 +1,12 @@
-import React from 'react';
+import React                from 'react';
 
+import CollapsibleContent   from '../../components/CollapsibleContent/CollapsibleContent';
 import './Root.scss';
 
-export default class App extends React.Component {
-
-  activeFn = e => {
-    e.target.className === 'active' ? e.target.className='unActive' : e.target.className='active'
-  }
-
+export default class Root extends React.Component {
   render() {
     return (
-      <div className='Root'>
+      <div className="Root">
         <h2>
           Czym są perfumy
         </h2>
@@ -18,25 +14,19 @@ export default class App extends React.Component {
           Nazwa <i>perfumy</i> wywodzi się od łacińskich słów <i>per fumum</i>, co oznacza "przez dym" i odnosi się do starożytnych obrzędów religijnych, w czasie których palono aromatyczne żywice i drewno w celu złożenia hołdu bogom i pozyskania ich przychylności. W późniejszym okresie Francuzi nazwali perfumami przyjemny zapach, który płynął z palących się kadzideł.
         </p>
         <p>
-          Perfumy w znaczeniu współczesnym, to znaczy alkoholowo - wodne roztwory mieszanki naturalnych i syntetycznych różnych substancji zapachowych, w czasach starożytnych nie istniały. Czysty alkohol zaczęli dopiero w średniowieczu produkować Arabowie. Cywilizacje starożytne ceniły i stosowały wonności oraz pachnidła w postaci pomad uzyskanych z mieszaniny tłuszczów i wonnych roślin. Posiadanie i używanie pachnideł było oznaką bogactwa i luksusu, a ich posiadacze cieszyli się ogromnym szacunkiem.
+          Perfumy w znaczeniu współczesnym to alkoholowo - wodne roztwory mieszanki naturalnych i syntetycznych różnych substancji zapachowych, w czasach starożytnych nie istniały. Czysty alkohol zaczęli dopiero w średniowieczu produkować Arabowie. Cywilizacje starożytne ceniły i stosowały wonności oraz pachnidła w postaci pomad uzyskanych z mieszaniny tłuszczów i wonnych roślin. Posiadanie i używanie pachnideł było oznaką bogactwa i luksusu, a ich posiadacze cieszyli się ogromnym szacunkiem.
         </p>
 
-        <div onClick={this.activeFn} className='unActive' >
-          <h3>
-            Historia perfum alkoholowych
-          </h3>
+        <CollapsibleContent title="Historia perfum alkoholowych">
           <p>
             Pierwszym znanym historii pachnidłem na bazie alkoholu była <i>Woda Królowej Węgier</i> (Larendogra, fran. <i>L'eau de la reine d'Hongrie</i>, łac. <i>Aqua Reginae Hungaricae</i>) sporządzona w 1367 roku i traktowana obecnie jako pierwowzór wszystkich perfum alkoholowych. W najbardziej znanej formie swoją popularność <i>Woda Królowej Węgier</i> zawdzięcza Polce, Elżbiecie Łokietkównej, żonie Karola Roberta Andegaweńskiego - króla Węgier. Zgodnie z legendą recepturę podarował królowej pustelnik, który przypisywał mieszance magiczne moce. Równie prawdopodobne jest, że było to dzieło nadwornego alchemika lub alchemików, którzy stanowili nieodłączny element średniowiecznych dworów. W rzeczywistości była to nalewka spirytusowa sporządzona z trzech części świeżego ziela rozmarynu lekarskiego i jednej części ziela lawendy lekarskiej. Spirytus sprowadzano aż z Konstantynopola. Tradycja utrzymuje, że głównie dzięki cudownym właściwościom wyciągu, królowej udało się mimo sędziwego wieku zachować zdrowie i urodę.
           </p>
           <p>
             Całkowicie nowym wynalazkiem, prawdziwie rewolucyjnym dla XVIII wieku oraz wyznaczającym nowe trendy w europejskiej perfumerii była Woda Kolońska. Stworzył ją włoski perfumiarz Jean Maria Farina, który osiadł w Kolonii. Francuzi nadali jej nazwę <i>Eau de Cologne</i> (<i>cologne</i> jest francuską nazwą niemieckiego miasta Köln) i szybko stała się szczególnie ulubiona przez jedną z kochanek Luisa XV - Comtesse du Barry. Odświeżająca mieszanka rozmarynu, kwiatu pomarańczy, bergamotki i cytryny miała również właściwości lecznicze i była używana na wiele sposobów: rozcieńczona do kąpieli, mieszana z winem, jedzona na kostkach cukru, do płukania ust, jako lewatywa i składnik gorących okładów, bezpośrednio wstrzykiwana, itd. Była więc pachnidłem i lekiem, a jej terapeutyczne właściwości opisywano w wielu dziełach medycznych i podręcznikach. Dziś tradycyjny zapach znany jako <i>Eau de Cologne</i> uznawany jest za wzór wód dla mężczyzn. Sprzedaje się go pod nazwą <i>Echte Kolnisch Wasser 4711</i> (<i>Prawdziwa woda kolońska 4711</i>) - najstarszy i najdłużej nieprzerwanie produkowany zapach na świecie.
           </p>
-        </div>
+        </CollapsibleContent>
 
-        <div onClick={this.activeFn} className='unActive' >
-          <h3>
-            Rodzaje perfum alkoholowych
-          </h3>
+        <CollapsibleContent title="Rodzaje perfum alkoholowych">
           <ul>
             <li>
               <strong>perfumy</strong> <i>Parfum</i> - spirytusowe roztwory substancji zapachowych.Mogą zwierać 20 do 40% koncentratu zapachowego rozpuszczonego w 90-96% alkoholu etylowego 95% (spirytus). Jest to najsilniejszy wyrób perfumeryjny, stosowany wieczorową porą;
@@ -55,14 +45,11 @@ export default class App extends React.Component {
             </li>
             <li>
               <strong>wody kwiatowe</strong> - 2-5% koncentratu zapachowego rozpuszczonego w 70-80% alkoholu etylowego 95% (spirytus).
-          </li>
+            </li>
           </ul>
-        </div>
+        </CollapsibleContent>
 
-        <div onClick={this.activeFn} className='unActive' >
-          <h3>
-            Historia perfum bezalkoholowych
-          </h3>
+        <CollapsibleContent title="Historia perfum bezalkoholowych">
           <p>
             Perfumy bezalkoholowe w postaci pomad, w których nośnikiem zapachu były tłuszcze są najstarszą formą pachnideł. Pachnącą pomadę przygotowywano metodą "enefleurage", która polegała na ekstrakcji wonnych roślin przy pomocy tłuszczu, najczęściej smalcu.Kwiaty układano na cienkich warstwach na tłuszczu, co pewien czas wymieniając na świeże. Tłuszcz szybko i skutecznie absorbował substancje zapachowe z surowca i w ten sposób powstała pachnąca pomada czyli tłuszcz nasycony olejkami, którego używano tak, jak dziś używane są perfumy. Były produkowane z pojedynczych roślin lub mieszanin.Konsystencja produktu zależna była od użytego tłuszczu, ponieważ obok tłuszczów stałych do ekstrakcji pachnących roślin stosowano również płynne oleje roślinne (olej mieszano ze sproszkowanymi kwiatami i aromatycznymi ziołami), uzyskując "wonne olejki", które stosowano do namaszczania i perfumowania ciała.
           </p>
@@ -78,38 +65,32 @@ export default class App extends React.Component {
           <p>
             We współczesnym przemyśle perfumeryjnym w bezalkoholowych wyrobach perfumeryjnych alkohol zastępuje się innymi rozpuszczalnikami kosmetycznymi (glikol dwupropylenowy, mirystynian izopropylu), albo sporządza się płynne emulsje bezalkoholowe w typie wód odświeżających, które są bardzo popularne na lato i w tropikach. Stosowane są również perfumy w formie kremów o różnej gęstości, czasami przypominające starożytne pomady oraz perfumy w formie sztyftów na bazie wosków.
           </p>
-        </div>
+        </CollapsibleContent>
 
-        <div onClick={this.activeFn} className='unActive' >
-          <h3>
-            Rodzaje perfum bezalkoholowych
-          </h3>
+        <CollapsibleContent title="Rodzaje perfum bezalkoholowych">
           <ul>
             <li>
               <strong>perfumy ciekłe bezalkoholowe</strong> - 3-25% koncentratu zapachowego rozpuszczonego w takich nośnikach jak: glikol dwupropylenowy, mirystynian izopropylu, oleje roślinne lub mineralne;
-          </li>
+            </li>
             <li>
               <strong>perfumy w kremie</strong> - 6-12% koncentratu zapachowego w emulsji kremowej typu OW lub rzadziej WO;
-          </li>
+            </li>
             <li>
               <strong>perfumy w sztyfcie</strong> - 5-20% koncentratu zapachowego w woskach, bazach typu kredek do warg;
-          </li>
+            </li>
             <li>
               <strong>aerozole bezalkoholowe</strong> - 5-25% koncentratu zapachowego w mieszance nośników propan - butan, dwutlenek węgla, powietrze i rozpuszczalniki bezalkoholowe;
-          </li>
+            </li>
             <li>
               <strong>żele i emulsje odświeżające płynne lub półpłynne</strong> - 2-8% koncentratu zapachowego w bazach żelowych i emulsjach typu OW lub rzadziej WO;
-          </li>
+            </li>
             <li>
               <strong>pudry i zasypki perfumowane</strong> - 2-8% koncentratu zapachowego w talku i innych bazach pudrowych
-          </li>
+            </li>
           </ul>
-        </div>
+        </CollapsibleContent>
 
-        <div onClick={this.activeFn} className='unActive' >
-          <h3>
-            Zasady tworzenia kompozycji zapachowych
-          </h3>
+        <CollapsibleContent title="Zasady tworzenia kompozycji zapachowych">
           <p>
             Kompozycja zapachowa jest mieszaniną naturalnych (pochodzenia roślinnego lub zwierzęcego) lub syntetycznych substancji zapachowych przeznaczoną do nadawania odpowiedniego zapachu różnym wyrobom i przedmiotom, a także otoczeniu człowieka. Tworzenie kompozycji zapachowych jest sztuką łączącą w sobie wiele dziedzin. Pachnidła są komponowane niczym symfonie lub piosenki i można w nich dostrzec nuty i akordy.
           </p>
@@ -125,12 +106,8 @@ export default class App extends React.Component {
           <p>
             Utrwalacze łączą składniki tworzące poszczególne nuty w jedną kompozycję. Perfumy nie powinny rozwarstwiać się na trzy fazy. Jeśli są prawidłowo skomponowane to zmiany, które zachodzą w procesie ulatniania są tak niezauważalne jak ruchy wskazówek zegara. Źle opracowane po prostu 'rozpadają się' na poszczególne fazy.
           </p>
-        </div>
+        </CollapsibleContent>
       </div>
     );
   }
 };
-
-
-// this.setState({ active: true })
-//   < div className = { classNames('Basic', { 'Basic--active': this.state.active })} />

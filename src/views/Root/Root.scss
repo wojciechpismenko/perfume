@@ -14,30 +14,15 @@
     padding: 5px 0 5px 15px;
   }
 
-  div {
+  h3 {
     cursor: pointer;
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
 
-    h3 {
-      pointer-events: none;
-      margin: 0;
-      padding: 10px 0 0 0;
-    }
-
-    p {
-      cursor: default;
-      margin: 0;
-      padding: 10px 0 10px 0;
-    }
+  p {
+    cursor: default;
+    margin: 0;
+    padding: 10px 0 10px 0;
   }
 }
-
-.active p,
-.active ul {
-  display: block;
-}
-
-.unActive p,
-.unActive ul {
-  display: none;
-}
-
