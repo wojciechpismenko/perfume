@@ -14,25 +14,25 @@ const HeadNotesView = () => (
     <CollapsibleContent title="Główne zapachy:">
       <ul>
         <li>
-          <strong>cytrusowe</strong> - cytryna, bergamotka, pomarańcza gorzka i słodka, limona, mandarynka, grejpfrut, petitgrain, cytrynowe drzewo herbaciane),
+          <b>cytrusowe</b> - cytryna, bergamotka, pomarańcza gorzka i słodka, limona, mandarynka, grejpfrut, petitgrain, cytrynowe drzewo herbaciane),
         </li>
         <li>
-          <strong>aldehydowe</strong> - chemiczny, lekko tłusty zapach,
+          <b>aldehydowe</b> - chemiczny, lekko tłusty zapach,
         </li>
         <li>
-          <strong>owocowe-lekkie</strong> - melon, arbuz, ananas, kaktus,
+          <b>owocowe-lekkie</b> - melon, arbuz, ananas, kaktus,
         </li>
         <li>
-          <strong>zielone</strong> - mięta, ogórek, melisa,
+          <b>zielone</b> - mięta, ogórek, melisa,
         </li>
         <li>
-          <strong>ziołowe</strong> - lawenda, tymianek,
+          <b>ziołowe</b> - lawenda, tymianek,
         </li>
         <li>
-          <strong>korzenne</strong> - czarny i zielony pieprz,
+          <b>korzenne</b> - czarny i zielony pieprz,
         </li>
         <li>
-          <strong>leśne z drzew iglastych</strong> - jodła.
+          <b>leśne z drzew iglastych</b> - jodła.
         </li>
       </ul>
     </CollapsibleContent>

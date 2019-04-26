@@ -28,22 +28,22 @@ export default class Root extends React.Component {
         <CollapsibleContent title="Rodzaje perfum alkoholowych">
           <ul>
             <li>
-              <strong>perfumy</strong> <i>Parfum</i> - spirytusowe roztwory substancji zapachowych.Mogą zwierać 20 do 40% koncentratu zapachowego rozpuszczonego w 90-96% alkoholu etylowego 95% (spirytus). Jest to najsilniejszy wyrób perfumeryjny, stosowany wieczorową porą;
+              <b>perfumy</b> <i>Parfum</i> - spirytusowe roztwory substancji zapachowych.Mogą zwierać 20 do 40% koncentratu zapachowego rozpuszczonego w 90-96% alkoholu etylowego 95% (spirytus). Jest to najsilniejszy wyrób perfumeryjny, stosowany wieczorową porą;
             </li>
             <li>
-              <strong>wody perfumowane</strong> <i>Eau de parfum</i> - 8-16% koncentratu zapachowego rozpuszczonego w 80-90% alkoholu etylowego 95% (spirytus). Zapach wody perfumowanej utrzymuje się od 4 do 6 godzin, jest stosowana głównie na dzień;
+              <b>wody perfumowane</b> <i>Eau de parfum</i> - 8-16% koncentratu zapachowego rozpuszczonego w 80-90% alkoholu etylowego 95% (spirytus). Zapach wody perfumowanej utrzymuje się od 4 do 6 godzin, jest stosowana głównie na dzień;
             </li>
             <li>
-              <strong>wody toaletowe</strong> <i>Eau de toilette</i> - 4-8% koncentratu zapachowego rozpuszczonego w 60-85% alkoholu etylowego 95% (spirytus). Wody toaletowe męskie zawierają mniejsze stężenie, ok. 5% zapachu;
+              <b>wody toaletowe</b> <i>Eau de toilette</i> - 4-8% koncentratu zapachowego rozpuszczonego w 60-85% alkoholu etylowego 95% (spirytus). Wody toaletowe męskie zawierają mniejsze stężenie, ok. 5% zapachu;
             </li>
             <li>
-              <strong>wody kolońskie</strong> <i>Eau de cologne</i> - 3-5% koncentratu zapachowego rozpuszczonego w 70-80% alkoholu etylowego 95% (spirytus). Są to głównie kosmetyki męskie charakteryzujące się najsłabszym zapachem i najmniejszą jego trwałością.Są to zazwyczaj wodno - alkoholowe roztwory olejków cytrusowych o prostym, soczystym i świeżym zapachu, przeznaczone do odświeżania skóry;
+              <b>wody kolońskie</b> <i>Eau de cologne</i> - 3-5% koncentratu zapachowego rozpuszczonego w 70-80% alkoholu etylowego 95% (spirytus). Są to głównie kosmetyki męskie charakteryzujące się najsłabszym zapachem i najmniejszą jego trwałością.Są to zazwyczaj wodno - alkoholowe roztwory olejków cytrusowych o prostym, soczystym i świeżym zapachu, przeznaczone do odświeżania skóry;
             </li>
             <li>
-              <strong>wody odświeżające</strong> <i>Eau fraiche</i> - 1-3% koncentratu zapachowego rozpuszczonego w w 70-80% alkoholu etylowego 95% (spirytus). Są to niezwykle delikatnie zaperfumowane roztwory wodno - alkoholowe, stosowane w krajach o ciepłym klimacie do spryskiwania ciała po kąpieli.Do kategorii wód odświeżających należą popularne tzw.aromatyczne mgiełki do ciała(ang.Body mist);
+              <b>wody odświeżające</b> <i>Eau fraiche</i> - 1-3% koncentratu zapachowego rozpuszczonego w w 70-80% alkoholu etylowego 95% (spirytus). Są to niezwykle delikatnie zaperfumowane roztwory wodno - alkoholowe, stosowane w krajach o ciepłym klimacie do spryskiwania ciała po kąpieli.Do kategorii wód odświeżających należą popularne tzw.aromatyczne mgiełki do ciała(ang.Body mist);
             </li>
             <li>
-              <strong>wody kwiatowe</strong> - 2-5% koncentratu zapachowego rozpuszczonego w 70-80% alkoholu etylowego 95% (spirytus).
+              <b>wody kwiatowe</b> - 2-5% koncentratu zapachowego rozpuszczonego w 70-80% alkoholu etylowego 95% (spirytus).
             </li>
           </ul>
         </CollapsibleContent>
@@ -69,22 +69,22 @@ export default class Root extends React.Component {
         <CollapsibleContent title="Rodzaje perfum bezalkoholowych">
           <ul>
             <li>
-              <strong>perfumy ciekłe bezalkoholowe</strong> - 3-25% koncentratu zapachowego rozpuszczonego w takich nośnikach jak: glikol dwupropylenowy, mirystynian izopropylu, oleje roślinne lub mineralne;
+              <b>perfumy ciekłe bezalkoholowe</b> - 3-25% koncentratu zapachowego rozpuszczonego w takich nośnikach jak: glikol dwupropylenowy, mirystynian izopropylu, oleje roślinne lub mineralne;
             </li>
             <li>
-              <strong>perfumy w kremie</strong> - 6-12% koncentratu zapachowego w emulsji kremowej typu OW lub rzadziej WO;
+              <b>perfumy w kremie</b> - 6-12% koncentratu zapachowego w emulsji kremowej typu OW lub rzadziej WO;
             </li>
             <li>
-              <strong>perfumy w sztyfcie</strong> - 5-20% koncentratu zapachowego w woskach, bazach typu kredek do warg;
+              <b>perfumy w sztyfcie</b> - 5-20% koncentratu zapachowego w woskach, bazach typu kredek do warg;
             </li>
             <li>
-              <strong>aerozole bezalkoholowe</strong> - 5-25% koncentratu zapachowego w mieszance nośników propan - butan, dwutlenek węgla, powietrze i rozpuszczalniki bezalkoholowe;
+              <b>aerozole bezalkoholowe</b> - 5-25% koncentratu zapachowego w mieszance nośników propan - butan, dwutlenek węgla, powietrze i rozpuszczalniki bezalkoholowe;
             </li>
             <li>
-              <strong>żele i emulsje odświeżające płynne lub półpłynne</strong> - 2-8% koncentratu zapachowego w bazach żelowych i emulsjach typu OW lub rzadziej WO;
+              <b>żele i emulsje odświeżające płynne lub półpłynne</b> - 2-8% koncentratu zapachowego w bazach żelowych i emulsjach typu OW lub rzadziej WO;
             </li>
             <li>
-              <strong>pudry i zasypki perfumowane</strong> - 2-8% koncentratu zapachowego w talku i innych bazach pudrowych
+              <b>pudry i zasypki perfumowane</b> - 2-8% koncentratu zapachowego w talku i innych bazach pudrowych
             </li>
           </ul>
         </CollapsibleContent>

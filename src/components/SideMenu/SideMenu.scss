@@ -1,0 +1,79 @@
+.SideMenu {
+  display: flex;
+  position: fixed;
+  top: 36px;
+  right: 0px;
+  justify-content: flex-end;
+  padding: 0 15px 0;
+  margin: 0;
+  height: calc(100vh - 60px);
+  cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+
+  &-img {
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+
+    &-notes {
+      position: absolute;
+      height: 100%;
+      z-index: 100;
+    }
+  }
+
+  &-button {
+    cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+
+    &-brain {
+      display: block;
+      position: absolute;
+      top: 3.5%;
+      right: 23vh;
+      height: 5.5%;
+      width: 7vh;
+      border: 2px solid black;
+      margin: 0;
+      padding: 0;
+      background: none;
+      z-index: 102;
+      outline: none;
+      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+    }
+
+    &-heart {
+      display: block;
+      position: absolute;
+      top: 22%;
+      right: 21.5vh;
+      height: 7%;
+      width: 4.5vh;
+      border: 2px solid black;
+      margin: 0;
+      padding: 0;
+      background: none;
+      z-index: 102;
+      outline: none;
+      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+    }
+
+    &-boot {
+      display: block;
+      position: absolute;
+      top: 78%;
+      right: 20vh;
+      height: 20%;
+      width: 9vh;
+      border: 2px solid black;
+      margin: 0;
+      padding: 0;
+      background: none;
+      z-index: 102;
+      outline: none;
+      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}

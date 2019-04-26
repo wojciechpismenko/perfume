@@ -1,6 +1,37 @@
-// .CollapsibleContent {
-//   &-active {
-//     display: block;
-//     background-color: pink;
-//   }
-// }
+@-webkit-keyframes showContent {
+  0% {  transform: translateY(-100%) }
+  100% { transform: translateY(0px) }
+}
+
+@keyframes showContent {
+  0% {  transform: translateY(-100%) }
+  100% { transform: translateY(0px) }
+}
+
+
+
+
+
+.CollapsibleContent {
+  overflow: hidden;
+  // transition: 12s transform ease-in-out;
+  // transform: translateY(0);
+
+
+  &-content{
+    overflow: hidden;
+    transform: translateY(0px);
+    transition: 12s transform ease-in-out;
+
+
+    // ::after {
+    //   overflow: hidden;
+    //   transition: 12s transform ease-in-out;
+    //   transform: translateY(0);
+    // animation: showContent .5s ease-in-out 0s 1 normal forwards;
+    // }
+  }
+
+
+
+}

@@ -14,11 +14,11 @@ export default class CollapsibleContent extends React.Component {
   render() {
     const { title, children } = this.props;
     return (
-      <div>
+      <div className="CollapsibleContent">
         <h3 onClick={this.activeFn}>
           {title}
         </h3>
-        {this.state.isActive && <div>{children}</div>}
+        {this.state.isActive && <div className="CollapsibleContent-content">{children}</div>}
       </div>
     );
   }

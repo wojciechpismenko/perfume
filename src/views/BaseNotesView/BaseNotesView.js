@@ -14,22 +14,22 @@ const BaseNotesView = () => (
     <CollapsibleContent title="Główne zapachy:">
       <ul>
         <li>
-          <strong>drewniane</strong> - sandał, cedr, wetiwer, paczula,
+          <b>drewniane</b> - sandał, cedr, wetiwer, paczula,
         </li>
         <li>
-          <strong>ambrowe</strong> - absolut ambretowy, ambra,
+          <b>ambrowe</b> - absolut ambretowy, ambra,
         </li>
         <li>
-          <strong>zwierzęce</strong> - piżmo, cywet, castoreum,
+          <b>zwierzęce</b> - piżmo, cywet, castoreum,
         </li>
         <li>
-          <strong>skórzane, tytoniowe, mech dębowy</strong>,
+          <b>skórzane, tytoniowe, mech dębowy</b>,
         </li>
         <li>
-          <strong>balsamiczno-kadzidłe</strong> - balsam Peru, benzoin, galbanum, mirra,
+          <b>balsamiczno-kadzidłe</b> - balsam Peru, benzoin, galbanum, mirra,
         </li>
         <li>
-          <strong>aromatyczno-słodke</strong> - wanilia, koniak, kawa, kakao, herbata, miód, migdały, marcepan.
+          <b>aromatyczno-słodke</b> - wanilia, koniak, kawa, kakao, herbata, miód, migdały, marcepan.
         </li>
       </ul>
     </CollapsibleContent>

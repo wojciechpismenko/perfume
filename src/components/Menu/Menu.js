@@ -6,7 +6,6 @@ import Root       from '../../views/Root/Root';
 import HeadNotes  from '../../views/HeadNotesView/HeadNotesView';
 import HeartNotes from '../../views/HeartNotesView/HeartNotesView';
 import BaseNotes  from '../../views/BaseNotesView/BaseNotesView';
-// import Button     from '../Button/Button';
 import './Menu.scss';
 
 export default class Menu extends React.Component {

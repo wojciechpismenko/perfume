@@ -3,15 +3,15 @@ import PropTypes  from 'prop-types';
 
 import './Button.scss';
 
-const Button = ({ children, type ...props }) => (
+const Button = ({ children, type, ...props }) => (
   <button className='Button' {...props}>{children}</button>
 );
 
-Input.propTypes = {
+Button.propTypes = {
   type: PropTypes.string,
 }
 
-Input.defaultProps = {
+Button.defaultProps = {
   type: 'button',
 }
 
