@@ -10,21 +10,50 @@ import Button         from '../Button/Button';
 import './SideMenu.scss';
 
 export default class SideMenu extends React.Component {
-  state = {
-    // activeNotes: { notes },
-  }
-
-  // notesFn = () => {
-  //   return ("SideMenu-notes")
+  // state = {
+  //   activeNotes: { notes },
   // }
 
+  // const element = document.querySelector('.button-test');
+
+  // element.addEventListener('mousemove', function(e) {
+  //     this.style.setProperty('--left', e.pageX - this.offsetLeft + "px");
+  //     this.style.setProperty('--top', e.pageY - this.offsetTop + "px");
+  // })
+
+
+  // const element = document.querySelector('.SideMenu-img-humanMuscle');
+
+  // element.addEventListener('mousemove', function(e) {
+  //   this.style.setProperty('--left', e.pageX - this.offsetLeft + "px");
+  //   this.style.setProperty('--top', e.pageY - this.offsetTop + "px");
+  // })
+
+
+  // document.querySelector('.SideMenu-img-humanMuscle').onmousemove = (e) => {
+  //   const x = e.pageX - e.target.offsetLeft;
+  //   const y = e.pageY - e.target.offsetTop;
+
+  //   e.target.style.setProperty('--x', `${x}px`)
+  //   e.target.style.setProperty('--y', `${y}px`)
+  // }
+
+  xRey = () => {
+    const element = document.querySelector('.button-test');
+
+    element.addEventListener('mousemove', function (e) {
+      this.style.setProperty('--left', e.pageX - this.offsetLeft + "px");
+      this.style.setProperty('--top', e.pageY - this.offsetTop + "px");
+    })
+  }
 
   render() {
-    const { notes } = this.props;
+    // const { notes } = this.props;
+
     return (
       <>
         <div className="SideMenu">
-          <img className="SideMenu-img" src={humanMuscle} alt="" />
+          <img className="SideMenu-img" src={humanMuscle}  alt="" />
           <img className="SideMenu-img" src={humanSkeleton} alt="" />
           <img className="SideMenu-img-notes" src={humanBrain} alt="" />
           <img className="SideMenu-img-notes" src={humanHeart} alt="" />
@@ -35,6 +64,12 @@ export default class SideMenu extends React.Component {
           <Button className="SideMenu-button-boot"/>
 
         </div>
+
+        <button type="button" className="button-test">
+          <span>KLIK</span>
+          { this.xRey() }
+        </button>
+
       </>
     );
   }
