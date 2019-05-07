@@ -9,24 +9,48 @@
   width: 100vw;
   z-index: 100;
   cursor: pointer;
+  justify-content: center;
+
+
+  &-imgDisactive, &-imgActive {
+    height: 30px;
+    top: 8px;
+    position: relative;
+    margin: 0 0 0 5px;
+  }
+
+  &-imgActive {
+    position: absolute;
+    visibility: hidden;
+  }
 
   ul {
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-
   }
 
   li {
+    position: relative;
     display: inline-flex;
-    justify-content: space-between;
-    margin: 0 15px 0 0;
+    margin: 0 0 0 10px;
     list-style-type: none;
     font-size: 1.5rem;
 
     a {
-      margin: 0 15px 0 0;
       text-decoration: none;
+      color: gray;
+
+      &:hover {
+        color: black;
+
+        .Menu-imgActive {
+          visibility: visible;
+        }
+
+        .Menu-imgDisactive {
+          visibility: hidden;
+        }
+    }
     }
   }
 }

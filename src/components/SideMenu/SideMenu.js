@@ -38,14 +38,14 @@ export default class SideMenu extends React.Component {
   //   e.target.style.setProperty('--y', `${y}px`)
   // }
 
-  xRey = () => {
-    const element = document.querySelector('.button-test');
+  // xRay = () => {
+  //   const element = document.querySelector('.button-test');
 
-    element.addEventListener('mousemove', function (e) {
-      this.style.setProperty('--left', e.pageX - this.offsetLeft + "px");
-      this.style.setProperty('--top', e.pageY - this.offsetTop + "px");
-    })
-  }
+  //   element.addEventListener('mousemove', function (e) {
+  //     this.style.setProperty('--left', e.pageX - this.offsetLeft + "px");
+  //     this.style.setProperty('--top', e.pageY - this.offsetTop + "px");
+  //   })
+  // }
 
   render() {
     // const { notes } = this.props;
@@ -67,7 +67,7 @@ export default class SideMenu extends React.Component {
 
         <button type="button" className="button-test">
           <span>KLIK</span>
-          { this.xRey() }
+          {/* { this.xRay() } */}
         </button>
 
       </>
