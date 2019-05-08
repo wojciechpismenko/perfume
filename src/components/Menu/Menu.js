@@ -1,18 +1,22 @@
-import React      from 'react';
+import React          from 'react';
 import { NavLink, BrowserRouter, Route, Switch }
-                  from 'react-router-dom';
+                      from 'react-router-dom';
 
-import Root       from '../../views/Root/Root';
-import HeadNotes  from '../../views/HeadNotesView/HeadNotesView';
-import HeartNotes from '../../views/HeartNotesView/HeartNotesView';
-import BaseNotes  from '../../views/BaseNotesView/BaseNotesView';
+// import Root           from '../../views/Root/Root';
+// import HeadNotes      from '../../views/HeadNotesView/HeadNotesView';
+// import HeartNotes     from '../../views/HeartNotesView/HeartNotesView';
+// import BaseNotes      from '../../views/BaseNotesView/BaseNotesView';
 
-import brainColor from '../../assets/images/brain.png';
-import brainBW    from '../../assets/images/brain2.png';
-import heartColor from '../../assets/images/heart.png';
-import heartBW    from '../../assets/images/heart2.png';
-import bootColor  from '../../assets/images/boot.png';
-import bootBW     from '../../assets/images/boot2.png';
+import perfumeColor   from '../../assets/images/perfume.png';
+import perfumeBW      from '../../assets/images/perfume2.png';
+import brainColor     from '../../assets/images/brain.png';
+import brainBW        from '../../assets/images/brain2.png';
+import heartColor     from '../../assets/images/heart.png';
+import heartBW        from '../../assets/images/heart2.png';
+import bootColor      from '../../assets/images/boot.png';
+import bootBW         from '../../assets/images/boot2.png';
+
+import AppNavigation from '../../AppNavigation';
 
 import './Menu.scss';
 
@@ -24,24 +28,28 @@ export default class Menu extends React.Component {
           <nav className="Menu">
             <ul>
               <li>
-                <NavLink exact to="/">perfumy</NavLink>
+                <NavLink activeClassName="Menu-navActive" exact to="/">
+                  perfumy
+                  <img className="Menu-imgActive" src={perfumeColor} alt="" />
+                  <img className="Menu-imgDisactive" src={perfumeBW} alt="" />
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/headnotes">
+                <NavLink activeClassName="Menu-navActive" to="/headnotes">
                   nuty głowy
                   <img className="Menu-imgActive" src={brainColor} alt="G" />
                   <img className="Menu-imgDisactive" src={brainBW} alt="G" />
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/heartnotes">
+                <NavLink activeClassName="Menu-navActive" to="/heartnotes">
                   nuty serca
                   <img className="Menu-imgActive" src={heartColor} alt="S" />
                   <img className="Menu-imgDisactive" src={heartBW} alt="S" />
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/basenotes">
+                <NavLink activeClassName="Menu-navActive" to="/basenotes">
                   nuty bazy
                   <img className="Menu-imgActive" src={bootColor} alt="B" />
                   <img className="Menu-imgDisactive" src={bootBW} alt="B" />
@@ -50,12 +58,7 @@ export default class Menu extends React.Component {
             </ul>
           </nav>
 
-          <Switch>
-            <Route exact path="/" component={Root} />
-            <Route path="/headnotes" component={HeadNotes} />
-            <Route path="/heartnotes" component={HeartNotes} />
-            <Route path="/basenotes" component={BaseNotes} />
-          </Switch>
+
         </BrowserRouter>
       </>
     );

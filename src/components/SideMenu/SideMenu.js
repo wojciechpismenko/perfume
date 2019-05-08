@@ -1,4 +1,11 @@
 import React          from 'react';
+import { NavLink, BrowserRouter, Route, Switch }
+                      from 'react-router-dom';
+
+import Root from '../../views/Root/Root';
+import HeadNotes from '../../views/HeadNotesView/HeadNotesView';
+import HeartNotes from '../../views/HeartNotesView/HeartNotesView';
+import BaseNotes from '../../views/BaseNotesView/BaseNotesView';
 
 import humanMuscle    from '../../assets/images/human_muscle.png';
 import humanSkeleton  from '../../assets/images/human_skeleton.png';
@@ -6,8 +13,11 @@ import humanBrain     from '../../assets/images/human_brain.png';
 import humanHeart     from '../../assets/images/human_heart.png';
 import humanBoot      from '../../assets/images/human_boot.png';
 
-import Button         from '../Button/Button';
+import AppNavigation  from '../../AppNavigation';
+import Button from '../Button/Button';
+
 import './SideMenu.scss';
+import AppContext from '../../AppContext';
 
 export default class SideMenu extends React.Component {
   // state = {
@@ -51,7 +61,7 @@ export default class SideMenu extends React.Component {
     // const { notes } = this.props;
 
     return (
-      <>
+      <BrowserRouter>
         <div className="SideMenu">
           <img className="SideMenu-img" src={humanMuscle}  alt="" />
           <img className="SideMenu-img" src={humanSkeleton} alt="" />
@@ -59,10 +69,9 @@ export default class SideMenu extends React.Component {
           <img className="SideMenu-img-notes" src={humanHeart} alt="" />
           <img className="SideMenu-img-notes" src={humanBoot} alt="" />
 
-          <Button className="SideMenu-button-brain"/>
+          <NavLink className="SideMenu-button-brain" to="/headnotes" />
           <Button className="SideMenu-button-heart"/>
           <Button className="SideMenu-button-boot"/>
-
         </div>
 
         <button type="button" className="button-test">
@@ -70,7 +79,9 @@ export default class SideMenu extends React.Component {
           {/* { this.xRay() } */}
         </button>
 
-      </>
+
+
+      </BrowserRouter>
     );
   }
 };

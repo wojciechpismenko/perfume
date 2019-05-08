@@ -11,8 +11,8 @@
   cursor: pointer;
   justify-content: center;
 
-
-  &-imgDisactive, &-imgActive {
+  &-imgDisactive,
+  &-imgActive {
     height: 30px;
     top: 8px;
     position: relative;
@@ -22,6 +22,16 @@
   &-imgActive {
     position: absolute;
     visibility: hidden;
+  }
+
+  &-navActive {
+    .Menu-imgActive {
+      visibility: visible;
+    }
+
+    .Menu-imgDisactive {
+      visibility: hidden;
+    }
   }
 
   ul {
@@ -50,7 +60,7 @@
         .Menu-imgDisactive {
           visibility: hidden;
         }
-    }
+      }
     }
   }
 }
