@@ -21,7 +21,6 @@ export default class App extends React.Component {
       <BrowserRouter>
         <Menu />
         <SideMenu />
-        <Footer />
 
         <Switch>
           <Route exact path="/" component={Root} />
@@ -29,6 +28,8 @@ export default class App extends React.Component {
           <Route path="/heartnotes" component={HeartNotes} />
           <Route path="/basenotes" component={BaseNotes} />
         </Switch>
+
+        <Footer />
       </BrowserRouter>
     );
   }

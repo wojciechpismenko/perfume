@@ -29,22 +29,22 @@ export default class Menu extends React.Component {
             <li>
               <NavLink activeClassName="Menu-navActive" to="/headnotes" name="HeadNotes">
                 nuty głowy
-                <img className="Menu-imgActive" src={brainColor} alt="G" />
-                <img className="Menu-imgDisactive" src={brainBW} alt="G" />
+                <img className="Menu-imgActive" src={brainColor} alt="" />
+                <img className="Menu-imgDisactive" src={brainBW} alt="" />
               </NavLink>
             </li>
             <li>
               <NavLink activeClassName="Menu-navActive" to="/heartnotes" name="HeartNotes">
                 nuty serca
-                <img className="Menu-imgActive" src={heartColor} alt="S" />
-                <img className="Menu-imgDisactive" src={heartBW} alt="S" />
+                <img className="Menu-imgActive" src={heartColor} alt="" />
+                <img className="Menu-imgDisactive" src={heartBW} alt="" />
               </NavLink>
             </li>
             <li>
               <NavLink activeClassName="Menu-navActive" to="/basenotes" name="BaseNotes">
                 nuty bazy
-                <img className="Menu-imgActive" src={bootColor} alt="B" />
-                <img className="Menu-imgDisactive" src={bootBW} alt="B" />
+                <img className="Menu-imgActive" src={bootColor} alt="" />
+                <img className="Menu-imgDisactive" src={bootBW} alt="" />
               </NavLink>
             </li>
           </ul>

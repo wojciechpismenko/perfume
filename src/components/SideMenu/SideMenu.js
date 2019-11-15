@@ -27,28 +27,33 @@ export default class SideMenu extends React.Component {
   }
 
   render() {
-    // const { notes } = this.props;
-    const baton = (
-      <button type="button" className="button-test" ref={this.getRef}>
-        <span>KLIK</span>
-      </button>
+
+    const SideMenuImage = (
+        <div className="SideMenu-img" ref={this.getRef}>
+        <img className="SideMenu-muscle" src={humanMuscle} alt="" />
+        <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
+        <img className="SideMenu-notes" src={humanBrain} alt="" />
+        <img className="SideMenu-notes" src={humanHeart} alt="" />
+        <img className="SideMenu-notes" src={humanBoot} alt="" />
+      </div>
     );
 
     return (
       <>
+        <div className="SideMenu" >
+          {SideMenuImage}
+        </div>
         <div className="SideMenu">
-          <img className="SideMenu-img" src={humanMuscle}  alt="" />
-          <img className="SideMenu-img" src={humanSkeleton} alt="" />
-          <img className="SideMenu-img-notes" src={humanBrain} alt="" />
-          <img className="SideMenu-img-notes" src={humanHeart} alt="" />
-          <img className="SideMenu-img-notes" src={humanBoot} alt="" />
+          <img className="SideMenu-muscle" src={humanMuscle}  alt="" />
+          <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
+          <img className="SideMenu-notes" src={humanBrain} alt="" />
+          <img className="SideMenu-notes" src={humanHeart} alt="" />
+          <img className="SideMenu-notes" src={humanBoot} alt="" />
 
           <NavLink className="SideMenu-button-brain" to="/headnotes" />
           <Button className="SideMenu-button-heart"/>
           <Button className="SideMenu-button-boot"/>
         </div>
-        {baton}
-
       </>
     );
   }

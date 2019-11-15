@@ -1,60 +1,43 @@
 .SideMenu {
   display: flex;
   position: fixed;
-  top: 36px;
+  top: 0px;
   right: 0px;
   justify-content: flex-end;
-  padding: 0 15px 0;
+  padding: 36px 15px 0;
   margin: 0;
   height: calc(100vh - 60px);
-  cursor: url("../../assets/images/cursor.svg") 25 25, auto;
+  background-color: white;
+  width: 100%;
 
   &-img {
+    padding: 100px;
+    overflow: hidden;
+    position: relative;
+    background: url("../../assets/images/human_muscle.png") no-repeat center center;
+    background-size: cover;
+    z-index: 101;
+  }
+
+  &-muscle {
+    position: absolute;
+    height: 100%;
+    z-index: 101;
+  }
+
+  &-skeleton {
     position: absolute;
     height: 100%;
     z-index: 100;
+  }
 
-    &-notes {
-      position: absolute;
-      height: 100%;
-      z-index: 100;
-    }
-
-    &-humanMuscle {
-      position: relative;
-      appearance: none;
-      background: #f72359;
-      padding: 1em 2em;
-      border: none;
-      color: white;
-      font-size: 1.2em;
-      cursor: pointer;
-      outline: none;
-      overflow: hidden;
-      border-radius: 100px;
-
-      &::before {
-        --size: 0;
-
-        content: '';
-        position: absolute;
-        left: var(--x);
-        top: var(--y);
-        width: var(--size);
-        height: var(--size);
-        background: radial-gradient(circle closest-side, #4405f7, transparent);
-        transform: translate(-50%, -50%);
-        transition: width .2s ease, height .2s ease;
-      }
-
-      &:hover::before {
-        --size: 400px;
-      }
-    }
+  &-notes {
+    position: absolute;
+    height: 100%;
+    z-index: 102;
   }
 
   &-button {
-    cursor: url("../../assets/images/cursor.svg") 25 25, auto;
 
     &-brain {
       display: block;
@@ -69,7 +52,6 @@
       background: none;
       z-index: 102;
       outline: none;
-      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
     }
 
     &-heart {
@@ -85,7 +67,6 @@
       background: none;
       z-index: 102;
       outline: none;
-      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
     }
 
     &-boot {
@@ -101,53 +82,6 @@
       background: none;
       z-index: 102;
       outline: none;
-      cursor: url("../../assets/images/cursor.svg") 25 25, auto;
-
-      &:hover {
-        opacity: .5;
-      }
     }
   }
-}
-
-
-
-
-.button-test {
-    --size: 0;
-    --left: 0;
-    --top: 0;
-
-    border: 0;
-    padding: 20px 70px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    background-color: tomato;
-}
-
-.button-test span {
-    position: relative;
-    z-index: 1;
-}
-
-.button-test:hover { /* wielkość gradientu zwiększam na hover */
-    --size: 400px;
-}
-
-.button-test:after {
-    content: '';
-    position: absolute;
-    left: var(--left);
-    top: var(--top);
-    width: var(--size);
-    height: var(--size);
-    background: radial-gradient(circle closest-side, #4405f7, tomato 60%);
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    transition: 0.3s width, 0.3s height;
-    z-index: 0;
 }
