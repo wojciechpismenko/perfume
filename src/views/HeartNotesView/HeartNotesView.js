@@ -14,7 +14,7 @@ const HeartNotesView = () => (
     <CollapsibleContent title="Główne zapachy:">
       <ul>
         <li>
-          <b>kwiatowe</b> - róża, champaka, ylang, jaśmin, drzewo różane, geranium, tuberoza, gardenia, różowy, biały i niebieski lotos, neroli, lilie, bez lilak, konwalia, fiołek, hiacynt, narcyz, lipa, magnolia, biała lilia imbirowa, palmaroza,
+          <b>kwiatowe</b> - róża, champaka, ylang, jaśmin, drzewo różane, geranium, tuberoza, gardenia, różowy, biały i niebieski lotos, neroli, lilie, bez, konwalia, fiołek, hiacynt, narcyz, lipa, magnolia, biała lilia imbirowa, palmaroza,
         </li>
         <li>
           <b>korzenne</b> - goździk, cynamon, imbir, kardamon, koper, hyzop, marchew,

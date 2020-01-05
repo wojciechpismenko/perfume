@@ -29,7 +29,7 @@ export default class SideMenu extends React.Component {
   render() {
 
     const SideMenuImage = (
-        <div className="SideMenu-img" ref={this.getRef}>
+      <div className="SideMenu-img" ref={this.getRef}>
         <img className="SideMenu-muscle" src={humanMuscle} alt="" />
         <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
         <img className="SideMenu-notes" src={humanBrain} alt="" />
@@ -51,8 +51,8 @@ export default class SideMenu extends React.Component {
           <img className="SideMenu-notes" src={humanBoot} alt="" />
 
           <NavLink className="SideMenu-button-brain" to="/headnotes" />
-          <Button className="SideMenu-button-heart"/>
-          <Button className="SideMenu-button-boot"/>
+          <NavLink className="SideMenu-button-heart" to="/heartnotes"/>
+          <NavLink className="SideMenu-button-boot" to="/basenotes"/>
         </div>
       </>
     );

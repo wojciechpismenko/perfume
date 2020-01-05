@@ -21,16 +21,16 @@
 
   &-imgActive {
     position: absolute;
-    visibility: hidden;
+    opacity: 0;
   }
 
   &-navActive {
     .Menu-imgActive {
-      visibility: visible;
+      opacity: 1;
     }
 
     .Menu-imgDisactive {
-      visibility: hidden;
+      opacity: 0;
     }
   }
 
@@ -54,11 +54,11 @@
         color: black;
 
         .Menu-imgActive {
-          visibility: visible;
+          opacity: 1;
         }
 
         .Menu-imgDisactive {
-          visibility: hidden;
+          opacity: 0;
         }
       }
     }

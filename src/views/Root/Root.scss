@@ -1,11 +1,12 @@
 .Root {
   position: relative;
+  right: -350px;
+  width: calc(100vw - 380px);
   min-height: calc(100vh - 30px);
   margin: 0;
-  padding: 30px 15px 0;
+  padding: 30px 0 0 15px;
   text-decoration: none;
   cursor: default;
-  width: calc(100vw - 50vh);
 
   ul {
     padding: 0;

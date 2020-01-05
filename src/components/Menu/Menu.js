@@ -20,7 +20,7 @@ export default class Menu extends React.Component {
         <nav className="Menu">
           <ul>
             <li>
-              <NavLink activeClassName="Menu-navActive" exact to="/" name="dupa">
+              <NavLink activeClassName="Menu-navActive" exact to="/" name="Root">
                 perfumy
                 <img className="Menu-imgActive" src={perfumeColor} alt="" />
                 <img className="Menu-imgDisactive" src={perfumeBW} alt="" />
