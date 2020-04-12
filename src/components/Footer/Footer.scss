@@ -1,14 +1,16 @@
 @import '../../variables.scss';
 
 .Footer {
-  display: flex;
-  position: relative;
+  display: inline-flex;
+  position: fixed;
   bottom: 0;
   margin: 0;
+  width: 100vw;
   padding: 5px 15px 5px;
   cursor: default;
   font-size: 0.8rem;
   color: gray;
+  background-color: white;
 
   p {
     margin: 0;

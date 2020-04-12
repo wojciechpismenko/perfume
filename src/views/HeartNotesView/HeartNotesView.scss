@@ -1,10 +1,10 @@
 .HeartNotesView {
   position: relative;
-  right: -350px;
-  width: calc(100vw - 380px);
+  right: calc(0px - ((100vh - 60px) / 1.85 ));
+  width: calc(100vw - ((100vh - 60px) / 1.85 ) - 30px);
   min-height: calc(100vh - 30px);
   margin: 0;
-  padding: 30px 0 0 15px;
+  padding: 30px 15px;
   text-decoration: none;
   cursor: default;
 
