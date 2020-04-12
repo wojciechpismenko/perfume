@@ -23,19 +23,37 @@ export default class SideMenu extends React.Component {
 
     return (
       <div className="SideMenu">
-        <img className="SideMenu-muscle" src={humanMuscle} alt="" />
-        <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
-        <img className="SideMenu-notes" src={humanBrain} alt="" />
-        <img className="SideMenu-notes" src={humanHeart} alt="" />
-        <img className="SideMenu-notes" src={humanBoot} alt="" />
-
-        <NavLink className="SideMenu-button-brain" to="/headnotes" />
-        <NavLink className="SideMenu-button-heart" to="/heartnotes" />
-        <NavLink className="SideMenu-button-boot" to="/basenotes" />
+        <NavLink activeClassName="SideMenu-navActive" exact to="/" name="Root">
+          <div className="SideMenu-button">
+            <img className="SideMenu-muscle" src={humanMuscle} alt="" />
+          </div>
+        </NavLink>
+        <NavLink activeClassName="SideMenu-navActive" to="/headnotes" name="HeadNotes">
+          <div className="SideMenu-button">
+            <div className="SideMenu-button-brain" />
+            <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
+            <img className="SideMenu-notes" src={humanBrain} alt="" />
+          </div>
+        </NavLink>
+        <NavLink activeClassName="SideMenu-navActive" to="/heartnotes" name="HeartNotes">
+          <div className="SideMenu-button">
+            <div className="SideMenu-button-heart" />
+            <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
+            <img className="SideMenu-notes" src={humanHeart} alt="" />
+          </div>
+        </NavLink>
+        <NavLink activeClassName="SideMenu-navActive" to="/basenotes" name="BaseNotes">
+          <div className="SideMenu-button">
+            <div className="SideMenu-button-boot" />
+            <img className="SideMenu-skeleton" src={humanSkeleton} alt="" />
+            <img className="SideMenu-notes" src={humanBoot} alt="" />
+          </div>
+        </NavLink>
       </div>
     );
   }
 };
+
 
 // const SideMenuImage = (
     //   <div className="SideMenu-img" alt="" >

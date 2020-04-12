@@ -16,7 +16,7 @@ const HeadNotesView = () => (
         <li>
           <b>cytrusowe</b> - cytryna, bergamotka, pomarańcza gorzka i słodka, limona, mandarynka, grejpfrut, petitgrain, cytrynowe drzewo herbaciane,
         </li>
-        <li>
+      <li>
           <b>aldehydowe</b> - chemiczny, lekko tłusty zapach,
         </li>
         <li>

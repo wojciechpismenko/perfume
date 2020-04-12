@@ -10,37 +10,48 @@
   background-color: white;
   width: 100%;
 
-  &-img {
-    padding: 100px;
-    overflow: hidden;
-    position: relative;
-    // background: url("../../assets/images/human_muscle.png") no-repeat center center;
-    background-size: cover;
-    z-index: 101;
-  }
-
   &-muscle,
   &-skeleton,
   &-notes {
     position: absolute;
     height: 100%;
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
   }
 
   &-muscle {
-    z-index: 101;
+    z-index: 100;
   }
 
   &-skeleton {
-    z-index: 100;
+    z-index: 101;
   }
 
   &-notes {
     z-index: 102;
-    opacity: .75;
+  }
+
+  &-navActive {
+    .SideMenu-muscle {
+      opacity: 1;
+    }
+    .SideMenu-skeleton {
+      opacity: 1;
+    }
+    .SideMenu-notes {
+      opacity: .75;
+    }
   }
 
   &-button {
     cursor: pointer;
+
+    &:hover {
+      .SideMenu-notes {
+        opacity: .5;
+      }
+    }
 
     &-brain,
     &-heart,
@@ -50,7 +61,7 @@
       margin: 0;
       padding: 0;
       background: none;
-      z-index: 102;
+      z-index: 103;
       outline: none;
     }
 
